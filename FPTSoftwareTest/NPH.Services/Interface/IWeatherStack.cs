@@ -1,0 +1,11 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace NPH.Services.Interface
+{
+    public interface IWeatherStack
+    {
+        public void Execute();
+    }
+}
