@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPTSoftwareTest", "FPTSoftwareTest\FPTSoftwareTest.csproj", "{5E687A34-4046-4DFD-B6D5-B29D0DE394BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FPTSoftwareTest", "FPTSoftwareTest\FPTSoftwareTest.csproj", "{5E687A34-4046-4DFD-B6D5-B29D0DE394BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPH.Services", "NPH.Services\NPH.Services.csproj", "{C620DAA7-015A-4D1B-ACDC-A849A4DEC0CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NPH.Services", "NPH.Services\NPH.Services.csproj", "{C620DAA7-015A-4D1B-ACDC-A849A4DEC0CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPH.ServicesTests", "NPH.ServicesTests\NPH.ServicesTests.csproj", "{3DC788F8-F4C1-4CD6-B5CE-FDCC1C303E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NPH.ServicesTests", "NPH.ServicesTests\NPH.ServicesTests.csproj", "{3DC788F8-F4C1-4CD6-B5CE-FDCC1C303E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPH.Model", "NPH.Model\NPH.Model.csproj", "{ECF6CCCA-883F-4AA3-B596-CA9C956F9F75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPH.Utilities", "NPH.Utilities\NPH.Utilities.csproj", "{27AB5C02-277D-48BB-8CF3-950276D67625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPH.Models", "NPH.Models\NPH.Models.csproj", "{BFA925D4-5E46-46D6-A220-4B40102D7402}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +31,14 @@ Global
 		{3DC788F8-F4C1-4CD6-B5CE-FDCC1C303E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DC788F8-F4C1-4CD6-B5CE-FDCC1C303E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DC788F8-F4C1-4CD6-B5CE-FDCC1C303E88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ECF6CCCA-883F-4AA3-B596-CA9C956F9F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECF6CCCA-883F-4AA3-B596-CA9C956F9F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECF6CCCA-883F-4AA3-B596-CA9C956F9F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECF6CCCA-883F-4AA3-B596-CA9C956F9F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27AB5C02-277D-48BB-8CF3-950276D67625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27AB5C02-277D-48BB-8CF3-950276D67625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27AB5C02-277D-48BB-8CF3-950276D67625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27AB5C02-277D-48BB-8CF3-950276D67625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA925D4-5E46-46D6-A220-4B40102D7402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA925D4-5E46-46D6-A220-4B40102D7402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA925D4-5E46-46D6-A220-4B40102D7402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA925D4-5E46-46D6-A220-4B40102D7402}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
