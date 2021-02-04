@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NPH.Services.Implementation;
+using NPH.Services.Interface;
+using System;
 using System.Configuration;
 
 namespace FPTSoftwareTest
@@ -15,6 +17,10 @@ namespace FPTSoftwareTest
                 Console.WriteLine("Please enter the valid zip code: ");
             }
             Console.WriteLine($"Your Zip Code is {zipCode}");
+
+            IWeatherStack _weatherStack = new WeatherStack();
+            var result = _weatherStack.Execute(SerivceUrl, zipCode);
+            Console.WriteLine(result);
             Console.ReadLine();
         }
     }

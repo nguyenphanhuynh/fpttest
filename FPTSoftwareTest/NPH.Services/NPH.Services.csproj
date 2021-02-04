@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NPH.Models\NPH.Models.csproj" />
+    <ProjectReference Include="..\NPH.Utilities\NPH.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

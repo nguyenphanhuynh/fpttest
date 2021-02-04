@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NPH.Models;
 
 namespace NPH.Services.Interface
 {
     public interface IWeatherStack
     {
-        public void Execute(string serviceUrl, int zipCode);
+        public WeatherResult Execute(string serviceUrl, int zipCode);
     }
 }
