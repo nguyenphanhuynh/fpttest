@@ -20,7 +20,14 @@ namespace FPTSoftwareTest
 
             IWeatherStack _weatherStack = new WeatherStack();
             var result = _weatherStack.GetWeatherInformation(SerivceUrl, zipCode);
-            Console.WriteLine(result);
+            IWeatherAnalysis _weatherAnalysis = new WeatherAnalysis();
+            var canGoOutSide = _weatherAnalysis.GoOuside(result) ? "Yes" : "No";
+            var needWearSunscreen = _weatherAnalysis.WearSunscreen(result) ? "Yes" : "No";
+            var canFlyKite = _weatherAnalysis.FlyKite(result) ? "Yes" : "No";
+            Console.WriteLine($"Should I go outside? {canGoOutSide}");
+            Console.WriteLine($"Should I wear sunscreen? {needWearSunscreen}");
+            Console.WriteLine($"Can I fly my kite? {canFlyKite}");
+
             Console.ReadLine();
         }
     }
