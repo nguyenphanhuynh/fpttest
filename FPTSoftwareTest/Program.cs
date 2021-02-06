@@ -19,7 +19,7 @@ namespace FPTSoftwareTest
             Console.WriteLine($"Your Zip Code is {zipCode}");
 
             IWeatherStack _weatherStack = new WeatherStack();
-            var result = _weatherStack.Execute(SerivceUrl, zipCode);
+            var result = _weatherStack.GetWeatherInformation(SerivceUrl, zipCode);
             Console.WriteLine(result);
             Console.ReadLine();
         }

@@ -4,6 +4,6 @@ namespace NPH.Services.Interface
 {
     public interface IWeatherStack
     {
-        public WeatherResult Execute(string serviceUrl, int zipCode);
+        public WeatherResult GetWeatherInformation(string serviceUrl, int zipCode);
     }
 }

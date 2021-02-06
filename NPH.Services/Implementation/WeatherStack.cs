@@ -7,9 +7,9 @@ namespace NPH.Services.Implementation
 {
     public class WeatherStack : IWeatherStack
     {
-        public WeatherResult Execute(string serviceUrl, int zipCode)
+        public WeatherResult GetWeatherInformation(string serviceUrl, int zipCode)
         {
-            string json = Helpers.Get($"{serviceUrl}{zipCode}");
+            string json = new Helpers().Get($"{serviceUrl}{zipCode}");
             return JsonConvert.DeserializeObject<WeatherResult>(json);
         }
     }

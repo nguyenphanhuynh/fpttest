@@ -1,19 +1,22 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace NPH.Models
 {
     public class WeatherResult
     {
+        [JsonProperty("success")]
+        public virtual string Success { get; set; }
+
         [JsonProperty("request")]
-        public WeatherRequest WeatherRequest { get; set; }
+        public virtual  WeatherRequest Request { get; set; }
 
         [JsonProperty("location")]
-        public WeatherLocaltion WeatherLocation { get; set; }
+        public virtual WeatherLocaltion Location { get; set; }
 
         [JsonProperty("current")]
-        public WeatherCurrent WeatherCurrent { get; set; }
+        public virtual WeatherCurrent Current { get; set; }
+
+        [JsonProperty("error")]
+        public virtual WeatherLocaltion Error { get; set; }
     }
 }
