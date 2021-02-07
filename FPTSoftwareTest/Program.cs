@@ -17,7 +17,7 @@ namespace FPTSoftwareTest
             }
             IWeatherStack _weatherStack = new WeatherStack();
             var result = _weatherStack.GetWeatherInformation(SerivceUrl, zipCode);
-            while (!result.Success)
+            while ((result.Success.HasValue && !result.Success.Value))
             {
                 Console.WriteLine(result.Error.Info);
                 Console.WriteLine("Please try again (or enter 0 to exit): ");
@@ -26,6 +26,7 @@ namespace FPTSoftwareTest
                 {
                     return;
                 }
+                result = _weatherStack.GetWeatherInformation(SerivceUrl, zipCode);
             }
 
             IWeatherAnalysis _weatherAnalysis = new WeatherAnalysis();
