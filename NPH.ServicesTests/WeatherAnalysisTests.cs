@@ -54,7 +54,7 @@ namespace NPH.Services.Tests
         [TestMethod()]
         public void GoOuside_Error_Test()
         {
-            mockWeather.Setup(p => p.Success).Returns("Error");
+            mockWeather.Setup(p => p.Success).Returns(false);
             mock.Setup(p => p.GetWeatherInformation("", 0)).Returns(mockWeather.Object);
 
             IWeatherAnalysis weatherAnalysis = new WeatherAnalysis();

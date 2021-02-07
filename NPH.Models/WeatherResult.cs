@@ -5,7 +5,7 @@ namespace NPH.Models
     public class WeatherResult
     {
         [JsonProperty("success")]
-        public virtual string Success { get; set; }
+        public virtual bool Success { get; set; }
 
         [JsonProperty("request")]
         public virtual  WeatherRequest Request { get; set; }
@@ -17,6 +17,6 @@ namespace NPH.Models
         public virtual WeatherCurrent Current { get; set; }
 
         [JsonProperty("error")]
-        public virtual WeatherLocaltion Error { get; set; }
+        public virtual WeatherError Error { get; set; }
     }
 }
